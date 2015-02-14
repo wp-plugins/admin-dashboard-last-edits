@@ -8,13 +8,13 @@ Stable tag: trunk
 License: GPL-2.0 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
-Easy and lightweight solution for showing the last edited posts on the admin dashboard.
+Easy and lightweight solution for showing the last edited posts and pages on the admin dashboard.
 
 == Description ==
-Admin Dashboard Last Edits is an easy and lightweight solution for showing the last edited posts on the admin dashboard. 
+Admin Dashboard Last Edits is an asy and lightweight solution for showing the last edited posts and pages on the admin dashboard. 
 
 = Features =
-* Admin Dashboard Widget with the last edited posts
+* Admin Dashboard Widget with the last edited posts and pages
 * Available in two languages: English, German.
 
 = Bug reports and Contribution =
@@ -41,9 +41,17 @@ Please comment an existing or create a new issue on the [plugins github page](ht
 Please create a pull request on the [plugins github page](https://github.com/wpdocde/admin-dashboard-last-edits/pulls).
 
 == Screenshots ==
-1. Widget in german language
+1. Widget in english language
+2. Widget in german language
 
 == Changelog ==
+== 1.1 ==
+* Added edit icon in front of the page or post title
+* Added date of the editing
+* Minor fixes in the readme
+* Updated german translation
+* Added new screenshots 
+
 = 1.0 =
 * Initial version
 * German translation

@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Admin Dashboard Last Edits
  * Plugin URI: http://wpdoc.de/plugins/
- * Description: Easy and lightweight solution for showing the last edited posts on the admin dashboard.
- * Version: 1.0 
+ * Description: Easy and lightweight solution for showing the last edited posts and pages on the admin dashboard.
+ * Version: 1.1 
  * Author: Johannes Ries
  * Author URI: http://wpdoc.de
  * Text Domain: admin-dashboard-last-edits
@@ -43,13 +43,15 @@ function admin_dashboard_last_edits_dashboard_widget() {
 
 /**
  * @todo Icons for post formats
- * @todo Add option to configure how many posts should be shown 
+ * @todo Add option to configure how many posts should be shown
+ * @todo Add option to show only posts or pages   
  */ 
   
   if ( $posts ) {
+    $date_format = get_option( 'date_format' );
     echo '<ul>';
-    foreach ( $posts as $post ) { 
-      printf('<li>&raquo; <a href="%1$s">%2$s</a></li>', esc_html( get_permalink( $post->ID )), esc_html( $post->post_title )); 
+    foreach ( $posts as $post ) {
+      printf( __( '<li><a href="%1$s" title="Edit %3$s"><span class="dashicons dashicons-edit"></span></a> <a href="%2$s" title="View %3$s on website">%3$s</a> <small>%4$s</small>', 'admin-dashboard-last-edits' ), esc_html( get_edit_post_link( $post->ID ) ), esc_html( get_permalink( $post->ID ) ), esc_html( $post->post_title ), esc_html( get_post_modified_time( $date_format, false, $post->ID, true )) ); 
     }
     echo '</ul>';
   }

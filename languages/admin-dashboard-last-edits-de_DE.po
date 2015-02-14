@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Admin Dashboard Last Edits v1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-02-10 09:25:08+0000\n"
+"PO-Revision-Date: 2015-02-14 07:56:15+0000\n"
 "Last-Translator: johannes <kontakt@johannesries.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,6 @@ msgstr "Admin Dashboard Letzte Bearbeitungen"
 msgid "Johannes Ries"
 msgstr ""
 
-#. translators: plugin header field 'PluginURI'
 #. translators: plugin header field 'AuthorURI'
 #: admin-dashboard-last-edits.php:0
 #@ admin-dashboard-last-edits
@@ -50,15 +49,27 @@ msgstr ""
 msgid "Recently edited posts"
 msgstr "K&uuml;rzlich bearbeitete Beitr&auml;ge"
 
-#: admin-dashboard-last-edits.php:58
+#: admin-dashboard-last-edits.php:60
 #, php-format
 #@ admin-dashboard-last-edits
 msgid "No edits found. <a href=\"%1$s\">Write a new post</a>."
 msgstr "Keine Bearbeitungen gefunden. <a href=\"%1$s\">Einen neuen Beitrag schreiben</a>."
 
+#. translators: plugin header field 'PluginURI'
+#: admin-dashboard-last-edits.php:0
+#@ admin-dashboard-last-edits
+msgid "http://wpdoc.de/plugins/"
+msgstr ""
+
 #. translators: plugin header field 'Description'
 #: admin-dashboard-last-edits.php:0
 #@ admin-dashboard-last-edits
-msgid "Easy and lightweight solution for showing the last edited posts on the admin dashboard."
-msgstr "Einfache und schlanke L&ouml;sung um k&uuml;rzlich bearbeitete Beitr&auml;ge im Admin Dashboard anzuzeigen."
+msgid "Easy and lightweight solution for showing the last edited posts and pages on the admin dashboard."
+msgstr "Eine einfache und schlanke L&ouml;sung um die letzten bearbeiteten Beitr&auml;ge und Seiten auf dem Admin Dashboard anzuzeigen."
+
+#: admin-dashboard-last-edits.php:54
+#, php-format
+#@ admin-dashboard-last-edits
+msgid "<li><a href=\"%1$s\" title=\"Edit %3$s\"><span class=\"dashicons dashicons-edit\"></span></a> <a href=\"%2$s\" title=\"View %3$s on website\">%3$s</a> <small>%4$s</small>"
+msgstr "<li><a href=\"%1$s\" title=\"%3$s bearbeiten\"><span class=\"dashicons dashicons-edit\"></span></a> <a href=\"%2$s\" title=\"%3$s auf der Website betrachten\">%3$s</a> <small>%4$s</small>"
 
