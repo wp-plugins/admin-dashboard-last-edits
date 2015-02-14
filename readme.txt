@@ -45,7 +45,7 @@ Please create a pull request on the [plugins github page](https://github.com/wpd
 2. Widget in german language
 
 == Changelog ==
-== 1.1 ==
+= 1.1 =
 * Added edit icon in front of the page or post title
 * Added date of the editing
 * Minor fixes in the readme
